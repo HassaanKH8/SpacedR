@@ -54,5 +54,35 @@
     Remember, hardwork always pays off.<br>
     Follow it regularly. 👨🏻‍🎓
 </p>
+
+<section class="faq-container">
+    <div class="faq-one">
+        <!-- faq question -->
+        <h2 class="faq-page">No emails?
+        </h2>
+        <!-- faq answer -->
+        <div class="faq-body">
+            <p>Firstly, Check your Spam or Promotions folder. Add <b>SpacedR</b> as a Contact or Star the messages. Mark it not spam. You will get future emails to your Inbox</p>
+        </div>
+    </div>
+</section>
+<script>
+    var faq = document.getElementsByClassName("faq-page");
+    var i;
+    for (i = 0; i < faq.length; i++) {
+        faq[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+            /* Toggle between hiding and showing the active panel */
+            var body = this.nextElementSibling;
+            if (body.style.display === "block") {
+                body.style.display = "none";
+            } else {
+                body.style.display = "block";
+            }
+        });
+    }
+    </script>
 </body>
 </html>

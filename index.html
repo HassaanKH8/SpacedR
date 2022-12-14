@@ -12,6 +12,7 @@
     <style>
     body{
         background-color: #fffbf3;
+        margin: 0;
     }
     #namess{
         display: block;
@@ -119,7 +120,7 @@
         width: 80px;
         margin-top: 40px;
     }
-    img{
+    .imgo{
         width: 35px;
         margin-left: 15px;
         margin-right: 15px;
@@ -187,8 +188,10 @@
         
     }
     
-    
-
+    .bt{
+        display: block;
+        text-align: center;
+    }
     </style>
 
     <h1>Spaced Repetition</h1>
@@ -198,7 +201,7 @@
             <input required="true" name="work" id="namess" type="text" placeholder="What you learnt today?">
             
             <div>
-                <img src="/public/rocket1.png"><hr><img src="/public/rocket2.png">
+                <img class="imgo" src="/public/rocket1.png"><hr><img class="imgo" src="/public/rocket2.png">
             </div>
             
             <input required="true" name="email" id="namess2" type="email" placeholder="Email">
@@ -206,35 +209,7 @@
         </form>
     </div>
     <p style="font-size: 16px;">&#9432; <a href="/info" style="font-size: 18px;"> Spacedr.</a></p>
+    <a class="bt" href="https://github.com/HassaanKH8"><img style="width: 60px;" src="/public/github.png" class="ghp"></a>
 
-    <section class="faq-container">
-        <div class="faq-one">
-            <!-- faq question -->
-            <h2 class="faq-page">No emails?
-            </h2>
-            <!-- faq answer -->
-            <div class="faq-body">
-                <p>Firstly, Check your Spam or Promotions folder. Add <b>SpacedR</b> as a Contact or Star the messages. Mark it not spam. You will get future emails to your Inbox</p>
-            </div>
-        </div>
-    </section>
-    <script>
-        var faq = document.getElementsByClassName("faq-page");
-        var i;
-        for (i = 0; i < faq.length; i++) {
-            faq[i].addEventListener("click", function () {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
-                /* Toggle between hiding and showing the active panel */
-                var body = this.nextElementSibling;
-                if (body.style.display === "block") {
-                    body.style.display = "none";
-                } else {
-                    body.style.display = "block";
-                }
-            });
-        }
-        </script>
 </body>
 </html>
