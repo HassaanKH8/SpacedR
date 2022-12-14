@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <style>
+        body{
+        background-color: #fffbf3;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: #454545;
+            margin-top: 250px;
+            font-weight: 600;
+        }
+        p{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #btn {
+            appearance: none;
+            background-color: #000000;
+            border: 2px solid #1A1A1A;
+            border-radius: 10px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family:'Courier New', Courier, monospace;
+            letter-spacing: 1px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+            margin: auto;
+            min-height: 45px;
+            min-width: 0;
+            outline: none;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: 125px;
+            will-change: transform;
+            display: block;
+            margin-top: 30px;
+        }
+
+        #btn:disabled {
+            pointer-events: none;
+        }
+
+        #btn:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+    </style>
+    <h1>Keep Learning!</h1>
+    <p>Sent Successfully</p>
+    <form action="/">
+        <input type="submit" value="New Task" id="btn">
+    </form>
+</body>
+</html>
