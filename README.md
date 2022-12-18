@@ -27,5 +27,5 @@ It works like a reminder app but it is Spaced Repetition.😎
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/HassaanKH8/SpacedRep/main/public/SpacedR.png)
+![App Screenshot](https://raw.githubusercontent.com/HassaanKH8/SpacedR/main/public/SpacedR.png)
 
