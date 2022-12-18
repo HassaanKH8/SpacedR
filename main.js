@@ -131,7 +131,7 @@ app.listen(process.env.PORT || 3000, function () {
             const data = {
                 from: 'SpacedR SpacedR@itshassaan.me',
                 to: chunk[3],
-                subject: 'SpacedR Task',
+                subject: 'Task',
                 text: String(x.toString().replace(/,/g, ''))
             };
             mg.messages().send(data, function (error, body) {
